@@ -22,7 +22,7 @@
         <link href="css/magnific-popup.css" rel="stylesheet">
 
         <link href="css/templatemo-first-portfolio-style.css" rel="stylesheet">
-        
+        <script src="/js/JSONBeautifier.js"> </script>
 
     </head>
     
@@ -418,6 +418,33 @@
                     </div>
                 </div>
             </section>
+            <script src="js/JSONBeautifier.js"> </script>
+            <section class="OnlineScript section-padding" id="section_5">                
+                <div class="container">
+                    <div class="col-lg-12 col-12">
+                        <h3 class="text-center mb-5">Try this mini script project -</h3>
+                    </div>
+                     <div class="row">
+                        <h6 class="text-center mb-5">Let's beautify JSON data : </h6>
+                        <div class="col">
+                            
+                                <form>
+                                    <label for="jsonInput">Enter your JSON data:</label><br>
+                                    <textarea id="jsonInput" rows="5" cols="50">{"name": "Dheeraj Raikwar","age": 23,"email": "dheerajraikwarindian@gmail.com"}</textarea><br>
+                                    <button type="button" class="custom-btn btn custom-link" onclick="handleBeautify()">Beautify</button>
+                                </form> 
+                        </div>
+                        <div class="col">
+                            <h6>Beautified JSON:</h6>
+                             <pre id="beautifiedJSON"></pre>
+                             <button type="button" class="custom-btn btn custom-link" onclick="copyToClipboard()">Copy</button>
+                            <div id="copyMessage"></div>
+                        </div>
+                    </div>                
+                    
+                </div>
+            </section>
+            
 
             <!-- <section class="contact section-padding" id="section_5">
                     <div class="container">
